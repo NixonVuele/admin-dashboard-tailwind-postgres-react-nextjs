@@ -1,6 +1,14 @@
+'use client'
 import React from 'react'
+import { Marker, Popup} from 'react-leaflet'
+import L from 'leaflet'
+import MarkerIcon from '../../node_modules/leaflet/dist/images/marker-icon.png'
+import MarkerShadow from '../../node_modules/leaflet/dist/images/marker-shadow.png'
+import 'leaflet/dist/leaflet.css'
 
-export default function Marker() {
+import { useState } from 'react'
+
+export default function Marker2({latitud, longitud}) {
   return (
     <Marker icon={
         new L.Icon({
@@ -12,7 +20,7 @@ export default function Marker() {
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
             shadowSize: [41, 41],
         })
-    } position={[-4.015581,-79.20783]}>
+    } position={[latitud,longitud]}>
          <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>

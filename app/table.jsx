@@ -35,6 +35,9 @@ export default function UsersTable({ users }) {
             <TableCell>
               <Text>{user.edad}</Text>
             </TableCell>
+            <TableCell>
+              <button className='Btn'> Ver Ruta</button>
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
