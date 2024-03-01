@@ -1,7 +1,7 @@
 "use client";
 import { sql } from '@vercel/postgres';
 import { Card, Title, Text } from '@tremor/react';
-import Search from './search';
+import Search from './components/search';
 import UsersTable from './table';
 import { useEffect,useState } from 'react';
 import { db } from '../app/config/firebase'

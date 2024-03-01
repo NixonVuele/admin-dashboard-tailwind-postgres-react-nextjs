@@ -1,11 +1,10 @@
-'use client'
+
 import React from 'react'
 import { Marker, Popup} from 'react-leaflet'
 import L from 'leaflet'
 import MarkerIcon from '../../node_modules/leaflet/dist/images/marker-icon.png'
 import MarkerShadow from '../../node_modules/leaflet/dist/images/marker-shadow.png'
 import 'leaflet/dist/leaflet.css'
-
 import { useState } from 'react'
 
 export default function Marker2({latitud, longitud}) {
